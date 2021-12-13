@@ -20,7 +20,7 @@
         padding: 25px 22px 30px
         display: flex
         flex-direction: column
-        &_article
+        &__article
           margin: 0
           margin-bottom: 5px
           font-family: Roboto Slab
@@ -29,14 +29,14 @@
           font-size: 16px
           line-height: 25px
           color: $primary
-        &_text
+        &__text
           font-style: normal
           font-weight: normal
           font-size: 14px
           line-height: 20px
           color: $light-text-color
           margin-bottom: 10px
-          &--mr
+          &-mr
             margin-bottom: 20px
             font-style: normal
             font-weight: normal
@@ -44,7 +44,7 @@
             line-height: 20px
             color: $light-text-color
             margin-bottom: 30px
-        &_date
+        &__date
           font-style: normal
           font-weight: normal
           font-size: 12px
@@ -141,7 +141,7 @@
         height: 370px
         overflow: hidden
         position: relative
-        &_image
+        &__image
           height: 370px
           width: 261px
           object-fit: cover
@@ -174,7 +174,7 @@
           top: 160px
           z-index: 20
           padding: 0 26px 25px 25px
-          &_heading
+          &-heading
             margin: 0
             font-style: normal
             font-weight: 900
@@ -183,7 +183,7 @@
             text-transform: uppercase
             letter-spacing: 0.5px
             color: #E7D9FF
-          &_article
+          &-article
             margin-top: 23px
             margin-bottom: 27px
             font-family: Roboto Slab
@@ -194,21 +194,21 @@
             text-transform: uppercase
             letter-spacing: 0.5px
             color: $secondary
-          &_coment
+          &-coment
             display: flex
             align-items: center
-          &_avatar
+          &-avatar
             width: 45px
             border-radius: 50%
             margin-right: 10px
-          &_name
+          &-name
             margin: 0
             font-style: normal
             font-weight: normal
             font-size: 14px
             line-height: 20px
             color: $secondary
-          &_date
+          &-date
             font-style: normal
             font-weight: normal
             font-size: 12px
@@ -216,10 +216,10 @@
             opacity: 0.4
             color: $secondary
             margin-right: 7px
-          &_ico
+          &-ico
             width: 14px
             opacity: 0.4
-          &_counter
+          &-counter
             font-style: normal
             font-weight: normal
             font-size: 12px
@@ -256,6 +256,8 @@
     display: grid
     grid-template-rows: repeat(3,minmax(min-content, 1fr))
     grid-gap: 30px
+    &__link
+      text-decoration: none
     &__download
       padding: 25px 25px 13px
       border-radius: 10px
@@ -297,11 +299,11 @@
       &-block
         display: flex
         justify-content: center
-        &_icon
+        &__icon
           width: 17px
           height: 17px
           margin-right: 11px
-        &_text
+        &__text
           font-style: normal
           font-weight: 900
           font-size: 14px
@@ -311,6 +313,7 @@
       padding: 20px 18px 25px 26px
       border-radius: 10px
       background-color: $secondary
+      text-decoration: none
       height: 370px
       position: relative
       &-title
@@ -333,7 +336,7 @@
       &-block
         display: flex
         flex-wrap: wrap
-        &_item
+        &__item
           display: flex
           width: fit-content
           margin-right: 8px
