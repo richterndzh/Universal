@@ -25,28 +25,7 @@
         &-link
           &:hover
             background-color: $blue
-  .extra
-    &-block
-      &__text
-        margin-right: 5px
-      &__divider
-        margin-right: 10px
-        margin-left: 10px
-  .articles
-    &-wrapper
-      grid-template-columns: 1fr
-    &-main
-      &__block
-        &-thin
-          &__image
-            width: 100%
-        &-thin2
-          &__image
-            width: 100%
-    &-aside
-      height: 500px
-      &__tags
-        height: 230px
+
 @media (min-width: 992px)
   .navbar
     &__button
@@ -65,38 +44,7 @@
       font-size: 12px
       line-height: 20
       margin-left: 30px
-  .extra
-    &-wrapper
-      flex-wrap: wrap
-      justify-content: space-between
-    &-block
-      width: 250px
-      &__divider
-        &--center
-          display: none
-  .articles
-    &-main
-      grid-template-rows: 1fr
-      height: 100%
-      &__block
-        &-thin
-          &__bottom
-            top: 100px
-            &_coment
-              flex-wrap: wrap
-        &-thin2
-          height: 100%
-          &__image
-            height: 70%
-        &-wide
-          &__block
-            &-left
-              width: 50%
-            &-right
-              width: 45%
-          &__coment
-            padding-right: 10px
-            margin-top: 5px
+
 @media (max-width: 768px)
   .container
     max-width: 676px
@@ -158,31 +106,7 @@
           width: 100%
           font-size: 30px
           line-height: 40px
-  .extra
-    &-block
-      width: 234px
-  .articles
-    &-main
-      grid-template-columns: 1fr 1fr
-      &__block
-        &-wide
-          grid-column: span 2
-          &__block
-            &-right
-              width: max-content
-        &-thin
-          &__bottom
-            top: 160px
-            &_coment
-              justify-content: left
-        &-thin2
-          height: 370px
-          grid-row: span 1
-    &-aside
-      &__social
-        &-link
-          &:hover
-            opacity: 1
+
 @media (max-width: 586px)
   .logo
     width: 163px
@@ -208,69 +132,20 @@
           width: 100%
           font-size: 30px
           line-height: 40px
-        &_title
+        &-title
           padding: 10px
         &-person
           margin-top: 25px
           margin-bottom: 120px
+        &-image
+          width: 100%
+          height: 570px
+          object-fit: cover
     &-mobileItem
       &__block
         width: 50%
         padding: 10px
-  .extra
-    &-block
-      width: 100%
-      justify-content: space-between
-      &__divider
-        &--aside
-          display: none
-        &--horizontal
-          display: block
-          width: 100%
-          margin-top: 5px
-          margin-bottom: 10px
-          height: 1px
-          background-color: $light-text-color
-      &__link
-        flex-basis: 100%
-        justify-content: space-between
-      &__text
-        width: 100%
-  .articles
-    &-main
-      grid-template-columns: 1fr
-      &__block
-        &-wide
-          height: 100%
-          grid-column: span 1
-          &__block
-            padding: 20px
-            &-right
-              display: none
-              height: 100%
-            &-left
-              width: 100%
-              height: 100%
-          &__coment
-            padding: 25px
-            &_name
-              font-size: 10px
-              line-height: 12px
-            &_text
-              font-size: 10px
-              line-height: 12px
-              margin-right: 5px
-            &_ico
-              min-width: 13px
-        &-thin
-          &__bottom
-            top: 50%
-    &-aside
-      grid-template-columns: 1fr
-      &__tags
-        height: 320px
-        grid-column: span 1
-        order: 2
+
 @media (max-width: 375px)
   .tabs
     &-mobileItem
@@ -278,38 +153,3 @@
         &-heading
           font-size: 10px
           line-height: 12px
-  .articles
-    &-main
-      grid-template-columns: 1fr
-      &__block
-        &-wide
-          height: 100%
-          grid-column: span 1
-          &__block
-            padding: 20px
-            &-right
-              display: none
-              height: 100%
-            &-left
-              width: 100%
-              height: 100%
-          &__coment
-            padding: 25px
-            &_name
-              font-size: 10px
-              line-height: 12px
-            &_text
-              font-size: 10px
-              line-height: 12px
-              margin-right: 5px
-            &_ico
-              min-width: 13px
-        &-thin
-          &__bottom
-            top: 50%
-    &-aside
-      grid-template-columns: 1fr
-      &__tags
-        grid-column: span 1
-        order: 2
-        height: 380px
