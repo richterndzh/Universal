@@ -25,6 +25,14 @@
         &-link
           &:hover
             background-color: $blue
+  .extra
+    &-block
+      &__text
+        margin-right: 4px
+    &-wrapper
+      &__divider
+        margin-right: 10px
+        margin-left: 10px
   .articles
     &-wrapper
       grid-template-columns: 1fr
@@ -75,6 +83,18 @@
       font-size: 12px
       line-height: 20
       margin-left: 30px
+  .extra
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-between
+      &__divider
+        &--center
+          display: none
+    &-block
+      width: 250px
+      &__text
+        margin-right: 30px
+
   .articles
     &-main
       grid-template-rows: 1fr
@@ -163,6 +183,9 @@
           width: 100%
           font-size: 30px
           line-height: 40px
+  .extra
+    &-block
+      width: 234px
   .articles
     &-main
       grid-template-columns: 1fr 1fr
@@ -223,6 +246,25 @@
       &__block
         width: 50%
         padding: 10px
+  .extra
+    &-wrapper
+      &__divider
+        &--aside
+          display: none
+        &--horizontal
+          display: block
+          width: 100%
+          margin-top: 5px
+          margin-bottom: 10px
+          height: 1px
+          background-color: $light-text-color
+    &-block
+      width: 100%
+      justify-content: space-between
+      &__link
+        flex-basis: 100%
+      &__text
+        width: 100%
   .articles
     &-main
       grid-template-columns: 1fr
