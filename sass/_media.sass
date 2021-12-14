@@ -65,6 +65,21 @@
         &-link
           &:hover
             opacity: 1
+  .bottomPages
+    &-wrapper
+      grid-template-columns: 100%
+    &-latest
+      &__container
+        display: flex
+        flex-wrap: wrap
+      &__articles
+        width: 50%
+        &-block
+          display: flex
+          align-items: center
+      &__divider2
+        display: block
+        width: 100%
 @media (min-width: 992px)
   .navbar
     &__button
@@ -208,6 +223,14 @@
         &-link
           &:hover
             opacity: 1
+  .bottomPages
+    &-articles
+      &__block
+        flex-wrap: wrap
+        &-image
+          width: 100%
+          margin-right: 0
+          margin-bottom: 10px
 @media (max-width: 586px)
   .logo
     width: 163px
@@ -304,6 +327,30 @@
         order: 2
       &__link
         margin-top: 25px
+  .bottomPages
+    &-laters
+    &-articles
+      &__block
+        &-image
+          min-width: 100%
+        &__block
+          &-data
+    &-articles
+      &__block
+        &-data
+          height: 100%
+@media (max-width: 498px)
+  .bottomPages
+    &-laters
+      &__container
+        flex-basis: 100%
+  .bottomPages
+    &-latest
+      &__container
+        display: flex
+        flex-direction: column
+      &__articles
+        width: 100%
 @media (max-width: 448px)
   .articles
     &-aside
@@ -350,3 +397,16 @@
       &__tags
         grid-column: span 1
         order: 2
+  .hotnews
+    &-title
+      &__link
+        font-size: 30px
+        line-height: 40px
+  .bottomPages
+    &-latest
+      &__container
+        padding: 0 10px
+    &-articles
+      &__block
+        &-data
+          height: 100%
