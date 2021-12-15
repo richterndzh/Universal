@@ -1,0 +1,42 @@
+.newsletter
+  background-color: $secondary
+  &-container
+    padding-top: 60px
+    padding-bottom: 70px
+    max-width: 750px
+    margin: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+  &-title
+    margin-top: 0
+    margin-bottom: 25px
+    text-align: center
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $primary
+    text-decoration: none
+  &-form
+    &__input
+      width: 313px
+      height: 40px
+      padding: 10px 15px
+      margin-right: 10px
+      border: 1px solid $divider
+      border-radius: 5px
+      &::placeholder
+        color: #939699
+    &__button
+      width: 136px
+      height: 40px
+      border-radius: 20px
+      border: none
+      cursor: pointer
+      background-color: $blue
+      color: $secondary
+      transition: all 0.3s ease-in-out
+      &:hover
+        background-color: $darkblue
