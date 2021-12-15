@@ -64,6 +64,22 @@
         &__link
           text-decoration: none
           color: $light-text-color
+          transition: all 0.3s ease-in-out
+          text-decoration: none
+          display: inline-block
+          line-height: 1
+          &:after
+            display: block
+            content: ""
+            height: 1px
+            width: 0%
+            background-color: $orange
+            transition: width 0.4s ease-in-out
+          &:hover:after,
+          &:focus:after
+            width: 100%
+          &:hover
+            color: $orange
   &-divider
     background: $divider
     border: none
