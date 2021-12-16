@@ -98,5 +98,24 @@ $(document).ready(function() {
     .classList.toggle('bottomPages-articles__block-data__bookmark6--red');
   });
 
+   //Обработка форм 
+      $('.form').each(function () {
+        $(this).validate({
+        errorClass: "invalid",
+        rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      
+        messages: {
+        email: {
+          required: "Введите адрес электронной почты",
+          email: "Ваш адрес электронной почты должен быть в формате name@domain.com.",
+        },
+      },
+    });
+  });
 });
 

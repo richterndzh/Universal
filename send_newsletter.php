@@ -47,3 +47,4 @@ try {
 
 // Отображение результата
 header('Location: thankyou.html');
+?>
