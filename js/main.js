@@ -154,10 +154,6 @@ var modalButton = $("[data-toggle=modal]");
             required: true,
             minlength: 2,
           },
-          mail: {
-            required: true,
-            mail: true,
-          },
           phone: {
             minlength: 16,
           },
@@ -168,10 +164,6 @@ var modalButton = $("[data-toggle=modal]");
               required: "Введите ваше имя",
               minlength: "Имя должно состоять минимум из двух букв.",
             },
-          mail: {
-            required: "Введите адрес электронной почты",
-            mail: "Ваш адрес электронной почты должен быть в формате name@domain.com.",
-          },
           phone: {
             required: "Введите ваш номер телефона",
           },
