@@ -134,6 +134,48 @@
       margin-left: 0
     &__info
       margin-top: 10px
+  .announce
+    height: 100%
+    &-wrapper
+      padding-left: 62px
+      &__author
+        width: auto
+        height: auto
+        bottom: -180px
+        right: 0px
+        &-block
+          padding: 20px 15px 0px
+          &__avatar
+            width: 70px
+            height: 70px
+          &__name
+            font-size: 16px
+            line-height: 20px
+          &__prof
+            font-size: 12px
+            line-height: 18px
+          &__counter
+            font-size: 12px
+            line-height: 18px
+        &__link
+          font-size: 12px
+          line-height: 18px
+    &__heading
+      &-navigation
+        &__link
+          &:hover
+            color: $secondary
+    &__headline
+      font-size: 30px
+      line-height: 40px
+    &__text
+      font-size: 14px
+      line-height: 20px
+    &__bottom
+      max-width: 150px
+      flex-wrap: wrap
+      &-date
+        margin-bottom: 10px
 @media (min-width: 992px)
   .navbar
     &__button
@@ -384,6 +426,48 @@
     &__dialog
       width: 90%
       padding: 36px 50px 33px 50px
+  .announce
+    height: 100%
+    &-wrapper
+      padding-top: 23px
+      padding-bottom: 50px
+      padding-left: 42px
+      &__author
+        bottom: -68px
+        right: 0px
+        &-block
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: center
+          width: 250px
+          padding: 20px 15px 0px
+          &__avatar
+            width: 60px
+            height: 60px
+            margin-right: 10px
+          &__name
+            font-size: 16px
+            line-height: 20px
+          &__prof
+            font-size: 12px
+            line-height: 18px
+          &__counter
+            display: block
+            font-size: 12px
+            line-height: 18px
+        &__link
+          font-size: 12px
+          line-height: 18px
+    &__headline
+      font-size: 30px
+      line-height: 40px
+    &__text
+      font-size: 14px
+      line-height: 20px
+    &__bottom
+      max-width: 150px
+      flex-wrap: wrap
 @media (max-width: 670px)
   .modal
     &__dialog
@@ -518,6 +602,59 @@
   #email-error
     margin-top: 90px
     margin-left: -320px
+  .announce
+    height: 100%
+    &-wrapper
+      padding-top: 23px
+      padding-bottom: 50px
+      padding-left: 42px
+      &__author
+        bottom: -90px
+        right: 0px
+        &-block
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: center
+          width: 250px
+          padding: 20px 15px 0px
+          &__avatar
+            width: 60px
+            height: 60px
+            margin-right: 10px
+          &__name
+            font-size: 16px
+            line-height: 20px
+          &__prof
+            font-size: 12px
+            line-height: 18px
+          &__counter
+            display: block
+            font-size: 12px
+            line-height: 18px
+        &__link
+          font-size: 12px
+          line-height: 18px
+    &__heading
+      margin-bottom: 40px
+      flex-direction: column
+      &-navigation
+        width: auto
+        height: 100%
+        justify-content: flex-start
+        margin-top: 10PX
+        margin-right: 0
+        &__prev
+          margin-right: 10px
+    &__headline
+      font-size: 24px
+      line-height: 30px
+    &__text
+      font-size: 14px
+      line-height: 16px
+    &__bottom
+      max-width: 150px
+      flex-wrap: wrap
 @media (max-width: 503px)
   .newsletter
     &-form
@@ -550,6 +687,11 @@
     &-aside
       &__link
         margin-top: 0
+@media (max-width: 435px)
+  .announce
+    &-wrapper
+      &__author
+        bottom: -130px
 @media (max-width: 375px)
   .tabs
     &-mobileItem
@@ -636,3 +778,20 @@
           opacity: 1
   #email-error
     margin-left: -290px
+  .announce
+    &-wrapper
+      &__author
+        bottom: -150px
+        right: 0px
+    &__text
+      margin-top: 20px
+      margin-bottom: 23px
+    &__heading
+      &-navigation
+        flex-wrap: wrap
+        &__home
+          margin-left: 70px
+          margin-right: 60px
+          margin-bottom: 10px
+        &__prev
+          margin-right: 50px
