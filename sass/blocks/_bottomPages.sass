@@ -12,6 +12,10 @@
     &__link
       text-decoration: none
       color: $light-text-color
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
     &__block
       display: flex
       align-items: center
@@ -215,6 +219,11 @@
         &__icon
           width: 13px
           margin-right: 5px
+        &__text
+          overflow: hidden
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
     &__divider
       margin: 0
       width: 100%
@@ -297,6 +306,10 @@
         font-size: 14px
         line-height: 20px
         color: $infotext
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
       &-created
         font-style: normal
         font-weight: normal

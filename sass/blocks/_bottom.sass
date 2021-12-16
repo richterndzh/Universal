@@ -5,6 +5,10 @@
   &__link
     text-decoration: none
     color: inherit
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
   &-wrapper
     display: grid
     grid-template-columns: 555px 555px
@@ -41,6 +45,10 @@
           line-height: 20px
           color: $primary
           margin-bottom: 10px
+          overflow: hidden
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
         &__date
           font-style: normal
           font-weight: normal
@@ -106,6 +114,10 @@
           color: $secondary
           text-align: center
           transition: all 0.3s ease-in-out
+          overflow: hidden
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
           &:hover
             color: $orange
         &__link
@@ -189,6 +201,10 @@
             line-height: 20px
             color: $light-text-color
             margin-bottom: 45px
+            overflow: hidden
+            display: -webkit-box
+            -webkit-line-clamp: 3
+            -webkit-box-orient: vertical
           &-link
             display: block
             margin-top: 45px
