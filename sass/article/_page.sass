@@ -1,0 +1,246 @@
+.page
+  background-color: $secondary
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  color: $light-text-color
+  &-top
+    max-width: 720px
+    padding-top: 44px
+    padding-left: 98px
+    padding-bottom: 30px
+    &__heading
+      margin-top: 34px
+      margin-bottom: 30px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $primary
+    &__text
+      line-height: 30px
+      margin-top: 10px
+      margin-bottom: 30px
+      &-second
+        margin-top: 10px
+        line-height: 30px
+      &-first
+        line-height: 30px
+        padding-bottom: 0
+        margin-bottom: 0px
+        &::first-letter
+          letter-spacing: 1px
+          font-weight: 900
+          font-size: 100px
+          line-height: 100px
+          color: $blue
+          letter-spacing: 0
+          float: left
+          margin-right: 10px
+  &-bottom
+    max-width: 710px
+    padding-top: 45px
+    padding-left: 92px
+    padding-bottom: 90px
+    position: relative
+    &__theme
+      position: absolute
+      top: 160px
+      left: 780px
+      width: 263px
+      &-title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: $primary
+      &-image
+        width: 263px
+        height: 180px
+        border-radius: 10px
+        object-fit: cover
+        overflow:
+      &-heading
+        display: block
+        margin-top: 10px
+        margin-bottom: 5px
+        width: 180px
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $primary
+      &-text
+        margin-bottom: 10px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: $light-text-color
+        max-width: 100px
+      &-info
+        margin-top: 20px
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $infotext
+        &__icon
+          margin-right: 5px
+        &__counter
+          margin-right: 11px
+    &__quote
+      position: relative
+      margin-top: 80px
+      margin-bottom: 45px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $primary
+      z-index: 0
+      &-icon
+        position: absolute
+        top: -20px
+        left: -20px
+        z-index: -1
+    &__text
+      margin-top: 0px
+      margin-bottom: 30px
+      line-height: 30px
+    &__tags
+      display: flex
+      flex-wrap: wrap
+      margin-top: 40px
+      margin-bottom: 60px
+      &-item
+        margin-right: 10px
+        padding: 5px 15px
+        border: 1px solid $divider
+        border-radius: 5px
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $primary
+        text-decoration: none
+        &:hover
+          border: 1px solid $orange
+          color: $orange
+    &__divider
+      width: 100%
+      height: 1px
+      background-color: $divider
+      border: none
+    &__share
+      margin-top: 30px
+      margin-bottom: 25px
+      margin-left: 8px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $primary
+    &__links
+      display: flex
+      align-items: center
+      margin-left: 10px
+      &-link
+        display: flex
+        align-items: center
+        height: 40px
+        width: 132px
+        margin-right: 14px
+        padding-left: 24px
+        background-color: $blue
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $secondary
+        text-decoration: none
+        border-radius: 20px
+        &:hover
+          opacity: 0.8
+        &__icon
+          height: 15px
+          margin-right: 9px
+        &__action
+          margin-right: 8px
+        &__counter
+          color: #BBC6FF
+  &-wrapper
+    height: 100%
+    border-radius: 10px
+    overflow: hidden
+    border: 1px solid $divider
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0px 35px
+      &-text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $primary
+      &-author
+        display: flex
+        &__divider
+          width: 1px
+          min-height: 70px
+          margin-right: 30px
+          background-color: $divider
+          border: none
+          margin-top: 0
+          margin-bottom: 0
+        &__avatar
+          width: 45px
+          height: 45px
+          margin-right: 10px
+          object-fit: cover
+          border-radius: 50px
+        &__info
+          display: flex
+          flex-direction: column
+          &-name
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $primary
+          &-prof
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $infotext
+  &-slider
+    width: 100%
+    height: 555px
+    &__slide
+      width: 100%
+      height: 100%
+      object-fit: cover
+.swiper
+  &-button
+    &-prev
+      width: 60px
+      height: 60px
+      left: 35px
+      &:hover
+        opacity: 0.8
+    &-next
+      width: 60px
+      height: 60px
+      right: 35px
+      &:hover
+        opacity: 0.8
