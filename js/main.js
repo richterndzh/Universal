@@ -178,5 +178,9 @@ var modalButton = $("[data-toggle=modal]");
       },
     });
   });
+  $(document).ready(function(){
+    $("#phone").mask("+7(000)000-00-00");
+    $("#phone1").mask("+7(000)000-00-00");
+  });
 });
 
