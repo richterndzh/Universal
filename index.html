@@ -35,7 +35,9 @@
             <a href="#footer" class="navbar-menu__link">CSS</a>
             <a href="#footer" class="navbar-menu__link">JavaScript</a>
             <a href="#footer" class="navbar-menu__link">Web Design</a>
-            <button class="navbar__button">ОСТАВИТЬ ЗАЯВКУ</button>
+            <button data-toggle="modal" class="navbar__button button">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
           </div>
           <!-- /.nav -->
           <button class="navbar-button navbar-button--mobile--visible">
@@ -1739,7 +1741,7 @@
           <form
             action="send_newsletter.php"
             method="POST"
-            class="newsletter-form form"
+            class="newsletter-form claim"
           >
             <input
               type="email"
@@ -1980,6 +1982,54 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+
+        <div class="modal__contact-form">
+          <h3 class="modal__title modal__title--mb-3">Universal</h3>
+          <form action="send.php" method="post" class="modal__form form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              id="phone"
+              class="input modal__input"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Email*"
+              name="mail"
+              required
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Сообщение"
+              name="message"
+            ></textarea>
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+        <!-- /.modal__contact-form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>

@@ -1,0 +1,104 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: rgba(28, 41, 48, 0.39)
+    visibility: hidden
+    opacity: 0
+    z-index: 100
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &__input
+      width: 350px
+      height: 100%
+      padding-left: 23px
+      padding-right: 75px
+      background-color: #F5FAFE
+      border: none
+      font-size: 12px
+      line-height: 15px
+      color: $hovertabs
+      outline: none
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 478px
+    max-height: 95%
+    padding: 33px 88px
+    background-color: $primary
+    color: $secondary
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    overflow-y: auto
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0 0 15px 0
+    text-transform: uppercase
+    text-align: center
+    &--mb-3
+      margin-bottom: 0
+  &__input
+    padding-left: 20px
+    width: 100%
+    height: 50px
+    border-radius: 5px
+    border: none
+    margin-top: 15px
+    font-size: 12px
+  &__message
+    padding-left: 20px
+    padding-top: 20px
+    width: 100%
+    height: 120px
+    border-radius: 5px
+    border: none
+    margin-top: 15px
+    font-size: 12px
+  &__button
+    background: #656B70
+    border-radius: 10px
+    height: 39px
+    border: none
+    padding-top: 10px
+    padding-bottom: 10px
+    padding: 10px 64px
+    white-space: nowrap
+    font-size: 14px
+    line-height: 20px
+    color: $secondary
+    text-align: center
+    margin-top: 20px
+    margin-left: 40px
+    cursor: pointer
+    transition: all 0.3s ease-in-out
+    &:hover
+      color: $primary
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    margin-top: 15px
+    line-height: 15px
+    color: #E0E0E0
