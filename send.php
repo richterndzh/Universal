@@ -54,5 +54,5 @@ try {
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: thankyou2.html');
 ?>
