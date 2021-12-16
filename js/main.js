@@ -127,6 +127,7 @@ var modalButton = $("[data-toggle=modal]");
     .classList.toggle('bottomPages-articles__block-data__bookmark6--red');
   });
 
+
    //Обработка форм 
       $('.claim').each(function () {
         $(this).validate({
