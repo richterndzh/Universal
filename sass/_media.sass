@@ -107,6 +107,27 @@
       &__button
         &:hover
           background-color: $blue
+  .footer
+    &-links
+      &__block
+        &-divider
+          &__red
+            width: 100%
+          &__violet
+            width: 100%
+          &__blue
+            width: 100%
+          &__orange
+            width: 100%
+          &__green
+            width: 100%
+          &__greyblue
+            width: 100%
+    &-contacts
+      &__links
+        &-logo
+          &:hover
+            opacity: 1
 @media (min-width: 992px)
   .navbar
     &__button
@@ -195,7 +216,34 @@
             &-headline
               &:hover
                 color: $primary
-
+  .footer
+    &-contacts
+      flex-direction: column
+      align-items: flex-start
+      &__links
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 10px
+        &-logo
+          margin-bottom: 10px
+        &-item
+          margin-bottom: 5px
+    &-links
+      flex-wrap: wrap
+      &__block
+        width: 50%
+        &-item
+          &__link
+            &:after
+              display: none
+            &:hover:after,
+            &:focus:after
+              display: none
+            &:hover
+              color: $primary
+    &-bottom
+      &__info
+        max-width: 70%
 @media (max-width: 768px)
   .container
     max-width: 676px
