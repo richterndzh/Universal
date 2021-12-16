@@ -29,12 +29,12 @@
           /></a>
           <div class="navbar-menu">
             <a href="#article" class="navbar-menu__link">Статьи</a>
-            <a href="#" class="navbar-menu__link">Новости</a>
+            <a href="#news" class="navbar-menu__link">Новости</a>
             <a href="#hot" class="navbar-menu__link">Горячее</a>
-            <a href="#" class="navbar-menu__link">HTML</a>
-            <a href="#" class="navbar-menu__link">CSS</a>
-            <a href="#" class="navbar-menu__link">JavaScript</a>
-            <a href="#" class="navbar-menu__link">Web Design</a>
+            <a href="#footer" class="navbar-menu__link">HTML</a>
+            <a href="#footer" class="navbar-menu__link">CSS</a>
+            <a href="#footer" class="navbar-menu__link">JavaScript</a>
+            <a href="#footer" class="navbar-menu__link">Web Design</a>
             <button class="navbar__button">ОСТАВИТЬ ЗАЯВКУ</button>
           </div>
           <!-- /.nav -->
@@ -1118,7 +1118,10 @@
                 <div class="bottomPages-articles__block-data__bookmark">
                   <i class="fas fa-bookmark"></i>
                 </div>
-                <h3 class="bottomPages-articles__block-data__heading-blue">
+                <h3
+                  id="news"
+                  class="bottomPages-articles__block-data__heading-blue"
+                >
                   Новости
                 </h3>
                 <h2 class="bottomPages-articles__block-data__headline">
@@ -1220,10 +1223,7 @@
                 <div class="bottomPages-articles__block-data__bookmark3">
                   <i class="fas fa-bookmark"></i>
                 </div>
-                <h3
-                  id="hot"
-                  class="bottomPages-articles__block-data__heading-red"
-                >
+                <h3 class="bottomPages-articles__block-data__heading-red">
                   Горячее
                 </h3>
                 <h2 class="bottomPages-articles__block-data__headline">
@@ -1643,7 +1643,7 @@
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
             </div>
-            <span class="bottom-wrapper__left-top">Горячее</span>
+            <span id="hot" class="bottom-wrapper__left-top">Горячее</span>
             <div class="bottom-wrapper__left-block">
               <img
                 src="img/bottom_slider/avatr.png"
@@ -1758,7 +1758,7 @@
       <!-- /.container -->
     </section>
     <!-- /.newsletter -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-links">
           <div class="footer-links__block">
