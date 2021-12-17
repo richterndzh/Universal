@@ -176,6 +176,23 @@
       flex-wrap: wrap
       &-date
         margin-bottom: 10px
+  .page
+    &-bottom
+      &__theme
+        margin-bottom: 20px
+        position: relative
+        top: 0
+        left: 0
+        width: auto
+        &-wrap
+          display: flex
+        &-image
+          min-width: 263px
+        &-heading
+          margin-top: 0
+        &-wrapper
+          &__mr
+            padding-left: 10px
 @media (min-width: 992px)
   .navbar
     &__button
@@ -300,6 +317,11 @@
     &__button
       &:hover
         color: $secondary
+  .page
+    &-top
+      &__text
+        &-first
+          width: 520px
 @media (max-width: 768px)
   .container
     max-width: 676px
@@ -468,6 +490,21 @@
     &__bottom
       max-width: 150px
       flex-wrap: wrap
+  .page
+    &-top
+      padding-left: 0
+      padding-top: 64px
+      &__text
+        &-first
+          width: auto
+    &-bottom
+      padding-left: 0
+      &__theme
+        &-image
+          min-width: 200px
+        &-heading
+          margin-top: 10px
+          margin-bottom: 10px
 @media (max-width: 670px)
   .modal
     &__dialog
@@ -655,6 +692,66 @@
     &__bottom
       max-width: 150px
       flex-wrap: wrap
+  .page
+    font-size: 14px
+    line-height: 20px
+    &-top
+      padding-top: 84px
+      padding-left: 22px
+      &__text
+        &-first
+          width: 100%
+    &-slider
+      height: 300px
+    &-bottom
+      padding-left: 0
+      &__theme
+        &-wrap
+          flex-direction: column
+        &-image
+          min-width: 100%
+    &-wrapper
+      height: 100%
+      border-radius: 10px
+      overflow: hidden
+      border: 1px solid $divider
+      &__bottom
+        padding-left: 10px
+        &-text
+          font-size: 12px
+          line-height: 14px
+        &-author
+          &__divider
+            width: 1px
+            min-height: 70px
+            margin-right: 15px
+            background-color: $divider
+            border: none
+            margin-top: 0
+            margin-bottom: 0
+          &__avatar
+            width: 25px
+            height: 25px
+            margin-right: 10px
+            object-fit: cover
+            border-radius: 50px
+          &__info
+            display: flex
+            flex-direction: column
+            &-name
+              font-size: 12px
+              line-height: 15px
+            &-prof
+              font-size: 10px
+              line-height: 15px
+  .swiper
+    &-button
+      &-prev
+        width: 40px
+        height: 40px
+      &-next
+        width: 40px
+        height: 40px
 @media (max-width: 503px)
   .newsletter
     &-form
@@ -795,3 +892,42 @@
           margin-bottom: 10px
         &__prev
           margin-right: 50px
+  .page
+    &-slider
+      height: 150px
+    &-top
+      padding-top: 160px
+      padding-left: 0px
+      &__text
+        &-first
+          width: 100%
+    &-bottom
+      padding-left: 0px
+      padding-bottom: 30px
+      &__quote
+        margin-top: 40px
+        margin-bottom: 25px
+        font-size: 20px
+        line-height: 22px
+        &-icon
+          left: -5px
+      &__tags
+        margin-bottom: 20px
+        &-item
+          margin-bottom: 10px
+      &__share
+        margin-top: 20px
+      &__links
+        flex-wrap: wrap
+        &-link
+          margin-bottom: 10px
+          &:hover
+            opacity: 1
+  .swiper
+    &-button
+      &-prev
+        width: 30px
+        height: 30px
+      &-next
+        width: 30px
+        height: 30px
