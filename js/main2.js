@@ -121,22 +121,22 @@ var modalButton = $("[data-toggle=modal]");
 var commentButton = document.querySelector(".commentaries-load")
   commentButton.addEventListener('click', function () {
     document
-    .querySelector(".commentaries-sheet_block--hidden")
-    .classList.toggle('commentaries-sheet_block--visible');    
+    .querySelector(".commentaries-sheet__block-hidden")
+    .classList.toggle('commentaries-sheet__block-visible');    
   });
 
   var loadButton = document.querySelector(".commentaries-load")
   loadButton.addEventListener('click', function () {
     document
     .querySelector(".commentaries-load")
-    .classList.toggle('commentaries-load--hidden');    
+    .classList.toggle('commentaries-load__hidden');    
   });
 
-  var menuButtonLight = document.querySelector(".navbar-button--light")
+  var menuButtonLight = document.querySelector(".navbar-button__light")
   menuButtonLight.addEventListener('click', function () {
     document
     .querySelector(".navbar-menu")
-    .classList.toggle('navbar-menu--visible');
+    .classList.toggle('navbar-menu__visible');
   });
 });
 
