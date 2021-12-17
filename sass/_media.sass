@@ -193,6 +193,9 @@
         &-wrapper
           &__mr
             padding-left: 10px
+  .activities
+    &-card
+      max-width: 220px
 @media (min-width: 992px)
   .navbar
     &__button
@@ -322,6 +325,16 @@
       &__text
         &-first
           width: 520px
+    &-bottom
+      &__tags
+        &-item
+          &:hover
+            border: 1px solid $divider
+            color: $primary
+  .activities
+    &-card
+      max-width: 170px
+      min-height: 50px
 @media (max-width: 768px)
   .container
     max-width: 676px
@@ -505,6 +518,21 @@
         &-heading
           margin-top: 10px
           margin-bottom: 10px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &-card
+      min-width: 49%
+      &__image
+        height: 200px
+  .commentaries
+    &-wrapper
+      padding-left: 42px
+    &-reply
+      &__block
+        &-form
+          &__textarea
+            width: 100%
 @media (max-width: 670px)
   .modal
     &__dialog
@@ -752,6 +780,13 @@
       &-next
         width: 40px
         height: 40px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &-card
+      min-width: 49%
+      &__image
+        height: 200px
 @media (max-width: 503px)
   .newsletter
     &-form
@@ -931,3 +966,8 @@
       &-next
         width: 30px
         height: 30px
+  .activities
+    padding-top: 30px
+    padding-bottom: 30px
+    &-card
+      min-width: 100%
