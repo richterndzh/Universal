@@ -196,6 +196,9 @@
   .activities
     &-card
       max-width: 220px
+  .commentaries
+    &-load
+      width: 100%
 @media (min-width: 992px)
   .navbar
     &__button
@@ -335,6 +338,14 @@
     &-card
       max-width: 170px
       min-height: 50px
+  .commentaries
+    &-wrapper
+      padding-left: 0
+    &-reply
+      &__block
+        &-form
+          &__textarea
+            width: 100%
 @media (max-width: 768px)
   .container
     max-width: 676px
@@ -527,7 +538,9 @@
         height: 200px
   .commentaries
     &-wrapper
-      padding-left: 42px
+      padding-left: 0
+    &-heading
+      align-items: center
     &-reply
       &__block
         &-form
@@ -539,6 +552,12 @@
       max-height: 90%
       overflow-y: scroll
       overflow-x: scroll
+  .commentaries
+    &-heading
+      &__headline
+        font-size: 28px
+        &-counter
+          font-size: 30px
 @media (max-width: 586px)
   .logo
     width: 163px
@@ -787,6 +806,32 @@
       min-width: 49%
       &__image
         height: 200px
+  .commentaries
+    &-wrapper
+      padding-left: 0
+    &-heading
+      flex-wrap: wrap
+      &__headline
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 15px
+        &-counter
+          font-size: 24px
+          line-height: 30px
+    &-sheet
+      &__block
+        &-avatar
+          width: 45px
+          height: 45px
+        &-message
+          &__text
+            font-size: 14px
+            line-height: 20px
+    &-reply
+      &__block
+        &-form
+          &__textarea
+            width: 100%
 @media (max-width: 503px)
   .newsletter
     &-form
@@ -971,3 +1016,63 @@
     padding-bottom: 30px
     &-card
       min-width: 100%
+  .commentaries
+    padding-top: 30px
+    padding-bottom: 20px
+    &-wrapper
+      padding-left: 0px
+    &-heading
+      flex-wrap: wrap
+      &__headline
+        margin-bottom: 20px
+    &-sheet
+      &__block
+        flex-direction: column
+        &-answer
+          padding-left: 25px
+        &-message
+          margin-left: 0px
+    &-load
+      margin-bottom: 20px
+    &-reply
+      padding: 10px
+      &__heading
+        font-size: 16px
+        flex-basis: 1
+        width: 100%
+        margin-left: 20px
+      &__block
+        flex-direction: column
+        &-user
+          margin-bottom: 20px
+          margin-left: 100px
+        &-form
+          &__textarea
+            position: relative
+            background: #fff
+            border: 1px solid $divider
+            &:after
+              content: ""
+              border: solid transparent
+              position: absolute
+              left: 30px
+              top: -20px
+              bottom: 100%
+            &:before
+              content: ""
+              border: solid transparent
+              position: absolute
+              left: 30px
+              top: -20px
+              bottom: 100%
+            &:after
+              border-bottom-color: #fff
+              border-width: 8px
+              margin-left: 0
+            &:before
+              border-bottom-color: $divider
+              border-width: 9px
+              margin-left: -1px
+          &__button
+            &:hover
+              opacity: 1
