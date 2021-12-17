@@ -118,6 +118,25 @@ var modalButton = $("[data-toggle=modal]");
     $("#phone").mask("+7(000)000-00-00");
     $("#phone1").mask("+7(000)000-00-00");
   });
+var commentButton = document.querySelector(".commentaries-load")
+  commentButton.addEventListener('click', function () {
+    document
+    .querySelector(".commentaries-sheet_block--hidden")
+    .classList.toggle('commentaries-sheet_block--visible');    
+  });
 
+  var loadButton = document.querySelector(".commentaries-load")
+  loadButton.addEventListener('click', function () {
+    document
+    .querySelector(".commentaries-load")
+    .classList.toggle('commentaries-load--hidden');    
+  });
+
+  var menuButtonLight = document.querySelector(".navbar-button--light")
+  menuButtonLight.addEventListener('click', function () {
+    document
+    .querySelector(".navbar-menu")
+    .classList.toggle('navbar-menu--visible');
+  });
 });
 

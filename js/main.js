@@ -176,5 +176,6 @@ var modalButton = $("[data-toggle=modal]");
     $("#phone1").mask("+7(000)000-00-00");
   });
 
+  
 });
 

@@ -1,0 +1,217 @@
+.commentaries
+  padding-top: 80px
+  padding-bottom: 30px
+  background-color: $secondary
+  &-wrapper
+    padding-left: 96px
+    max-width: 842px
+  &-heading
+    display: flex
+    justify-content: space-between
+    margin-bottom: 25px
+    &_headline
+      margin: 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $primary
+      &-counter
+        font-family: Lato-medium
+        font-style: normal
+        font-weight: normal
+        font-size: 40px
+        line-height: 50px
+        color: $infotext
+        text-transform: uppercase
+    &_link
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 10px 20px
+      border: 1px solid $divider
+      border-radius: 20px
+      height: 40px
+      text-decoration: none
+      &-icon
+        width: 18px
+        height: 18px
+      &-text
+        margin-left: 11px
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $primary
+      &:hover
+        border: 1px solid $blue
+  &-divider
+    width: 100%
+    height: 1px
+    background-color: $divider
+    border: none
+  &-sheet
+    &_block
+      display: flex
+      margin-top: 20px
+      margin-bottom: 29px
+      &--answer
+        padding-left: 90px
+      &--hidden
+        display: none
+      &--visible
+        display: block
+      &-avatar
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50px
+      &-message
+        margin-left: 15px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $infotext
+        &_heading
+          display: flex
+          align-items: center
+          margin-bottom: 10px
+          &-name
+            margin: 0
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $primary
+          &-date
+            margin-left: 10px
+        &_text
+          margin-bottom: 15px
+          max-width: 570px
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 30px
+          color: $light-text-color
+        &_actions
+          display: flex
+          align-items: center
+          cursor: pointer
+          &--mr
+            margin-top: 46px
+          &-icon
+            width: 13px
+            height: 13px
+            margin-right: 5px
+            margin-left: 5px
+          &-counter
+            color: $primary
+            margin-right: 6px
+            &--none
+              color: $infotext
+            &--green
+              color: $green
+            &--red
+              color: $red
+  &-load
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 60px
+    width: 750px
+    padding: 10px 20px
+    border: 1px solid $divider
+    border-radius: 25px
+    height: 50px
+    text-decoration: none
+    background-color: $secondary
+    cursor: pointer
+    &--hidden
+      display: none
+    &_icon
+      width: 13px
+      margin-right: 7px
+    &:hover
+      border: 1px solid $blue
+  &-reply
+    padding: 30px 40px 35px 30px
+    max-width: 842px
+    background-color: $hovertabs
+    &_heading
+      margin-top: 0
+      margin-left: 100px
+
+      margin-bottom: 15px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $primary
+    &_block
+      display: flex
+      &-user
+        margin-right: 20px
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50px
+      &-form
+        width: 100%
+        &_textarea
+          margin-bottom: 15px
+          width: 590px
+          height: 130px
+          padding: 10px 10px
+          position: relative
+          background: #fff
+          border: 1px solid #D9DADB
+          -webkit-border-radius: 5px
+          border-radius: 5px
+          &:after
+            content: ""
+            border: solid transparent
+            position: absolute
+            right: 100%
+            top: 25px
+          &:before
+            content: ""
+            border: solid transparent
+            position: absolute
+            right: 100%
+            top: 25px
+
+          &:after
+            border-right-color: #fff
+            border-width: 8px
+            margin-top: 0
+
+          &:before
+            border-right-color: $divider
+            border-width: 9px
+            margin-top: -1px
+          &-block
+            width: 100%
+            min-height: 110px
+            border: none
+            resize: none
+
+        &_button
+          padding: 10px 20px
+          background-color: $blue
+          border-radius: 20px
+          border: none
+          cursor: pointer
+          font-style: normal
+          font-weight: 900
+          font-size: 14px
+          line-height: 20px
+          color: $secondary
+          &:hover
+            opacity: 0.8
+          &-icon
+            margin-left: 8px
+            width: 15px
