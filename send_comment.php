@@ -49,5 +49,5 @@ try {
 }
 
 // Отображение результата
-header('Location: thankyou2.html');
+header('Location: thankyou3.html');
 ?>
