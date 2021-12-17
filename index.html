@@ -35,7 +35,10 @@
             <a href="#footer" class="navbar-menu__link">CSS</a>
             <a href="#footer" class="navbar-menu__link">JavaScript</a>
             <a href="#footer" class="navbar-menu__link">Web Design</a>
-            <button data-toggle="modal" class="navbar__button button">
+            <button
+              data-toggle="modal"
+              class="navbar__button button navbar-button--mobile--visible"
+            >
               ОСТАВИТЬ ЗАЯВКУ
             </button>
           </div>
@@ -1989,43 +1992,62 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <a href="#" class="to-top">
+      <img
+        src="./img/arrow_upward.svg"
+        alt="Стрелка наверх"
+        width="24"
+        height="24"
+      />
+    </a>
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" />
+          <img src="img/X.svg" alt="" />
         </a>
-
-        <div class="modal__contact-form">
-          <h3 class="modal__title modal__title--mb-3">Universal</h3>
-          <form action="send.php" method="post" class="modal__form form">
+        <h2 class="modal__title modal__title--form">Обратная связь</h2>
+        <form action="send.php" method="POST" class="form modal__form">
+          <label class="label-title label-title-theme">
+            Тема
+            <select name="theme" class="modal__theme">
+              <option selected>Выберите тему</option>
+              <option>Статьи</option>
+              <option>Новости</option>
+              <option>Горячее</option>
+              <option>Публикации</option>
+              <option>Ошибка на сайте</option>
+              <option>Сотрудничество</option>
+            </select>
+          </label>
+          <label class="label-title label-title-message">
+            Сообщение
+            <textarea class="message modal__message" name="message"></textarea>
+          </label>
+          <label class="label-title label-title-email">
+            Email
             <input
-              type="text"
+              type="email"
               class="input modal__input"
-              placeholder="Ваше имя*"
-              name="name"
+              name="email"
               required
             />
+          </label>
+          <label class="label-info">
             <input
-              type="text"
-              id="phone"
-              class="input modal__input"
-              placeholder="Номер телефона*"
-              name="phone"
+              type="checkbox"
+              class="modal__checkbox"
+              name="checkbox"
               required
+              checked
             />
-            <textarea
-              class="message modal__message"
-              placeholder="Сообщение"
-              name="message"
-            ></textarea>
-            <button class="button modal__button" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-        <!-- /.modal__contact-form -->
+            Согласен с обработкой данных
+          </label>
+          <button type="submit" name="modal-send" class="button modal__button">
+            Отправить
+          </button>
+        </form>
       </div>
       <!-- /.modal__dialog -->
     </div>

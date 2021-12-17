@@ -1,40 +1,31 @@
 .modal
+  margin: 0
+  padding: 0
   &__overlay
     position: fixed
     top: 0
     right: 0
-    left: 0
     bottom: 0
-    background-color: rgba(28, 41, 48, 0.39)
+    left: 0
+    background-color: rgba(40, 47, 54, 0.8)
+    z-index: 100
     visibility: hidden
     opacity: 0
-    z-index: 100
     transition: opacity 0.2s
     &--visible
       visibility: visible
       opacity: 1
-    &__input
-      width: 350px
-      height: 100%
-      padding-left: 23px
-      padding-right: 75px
-      background-color: #F5FAFE
-      border: none
-      font-size: 12px
-      line-height: 15px
-      color: $hovertabs
-      outline: none
   &__dialog
     position: fixed
     top: 50%
     left: 50%
+    max-width: 360px
+    max-height: 90%
+    padding: 30px 35px 40px 35px
     transform: translate(-50%, -50%)
-    max-width: 478px
-    max-height: 95%
-    padding: 33px 88px
-    background-color: $primary
+    background-color: $secondary
     color: $secondary
-    border-radius: 8px
+    border-radius: 10px
     z-index: 101
     visibility: hidden
     opacity: 0
@@ -45,60 +36,108 @@
       opacity: 1
   &__close
     position: absolute
-    top: 17px
-    right: 18px
+    top: 15px
+    right: 15px
     text-decoration: none
     cursor: pointer
   &__title
+    margin: 0
+    margin-bottom: 25px
+    font-family: "Roboto Slab", serif
     font-style: normal
     font-weight: bold
-    font-size: 18px
-    line-height: 23px
-    margin: 0 0 15px 0
-    text-transform: uppercase
-    text-align: center
-    &--mb-3
-      margin-bottom: 0
+    font-size: 20px
+    line-height: 25px
+    color: $primary
   &__input
-    padding-left: 20px
+    max-width: 290px
     width: 100%
-    height: 50px
+    min-height: 40px
+    margin-top: 5px
+    margin-bottom: 0
+    border: 1px solid #D9DADB
     border-radius: 5px
-    border: none
-    margin-top: 15px
-    font-size: 12px
-  &__message
-    padding-left: 20px
-    padding-top: 20px
-    width: 100%
-    height: 120px
-    border-radius: 5px
-    border: none
-    margin-top: 15px
-    font-size: 12px
-  &__button
-    background: #656B70
+    &:not(:first-child)
+      margin-top: 15px
+  &__checkbox
+    margin: 0
+    margin-right: 10px
+    padding: 0
+    width: 20px
+    height: 20px
     border-radius: 10px
-    height: 39px
-    border: none
-    padding-top: 10px
-    padding-bottom: 10px
-    padding: 10px 64px
-    white-space: nowrap
+    cursor: pointer
+  &__message
+    width: 100%
+    min-height: 120px
+    max-width: 290px
+    margin-top: 5px
+    margin-bottom: 6px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    resize: none
+  &__button
+    padding: 10px 25px
+    margin-top: 30px
+    min-width: 72px
+    min-height: 20px
+    font-style: normal
+    font-weight: 900
     font-size: 14px
     line-height: 20px
     color: $secondary
-    text-align: center
-    margin-top: 20px
-    margin-left: 40px
+    background: $blue
+    border-radius: 20px
+    border: none
     cursor: pointer
-    transition: all 0.3s ease-in-out
-    &:hover
-      color: $primary
   &__info
-    font-style: normal
+    margin-left: 10px
     font-weight: bold
     font-size: 12px
-    margin-top: 15px
     line-height: 15px
     color: #E0E0E0
+  &__form
+    display: block
+  &__theme
+    padding-left: 10px
+    max-width: 290px
+    width: 100%
+    min-height: 40px
+    margin-top: 5px
+    margin-bottom: 15px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    background-color: $secondary
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+.label
+  &-title
+    margin: 0
+    padding: 0
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $primary
+    &-theme
+      margin-bottom: 5px
+    &-message
+      margin-bottom: 5px
+    &-email
+      margin-bottom: 5px
+  &-info
+    display: flex
+    align-items: center
+    margin-top: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+#checkbox-error
+  position: absolute
+  bottom: 90px
+  left: 65px
