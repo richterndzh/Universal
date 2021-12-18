@@ -203,8 +203,14 @@
         transform: scale(1.03)
         box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
   .to-top
+    transition: all 0.3s ease-in-out
     &:hover
       box-shadow: inset 0 0 15px $greyblue
+  .modal
+    &__button
+      transition: all 0.3s ease-in-out
+      &:hover
+        background-color: $darkblue
 @media (max-width: 992px)
   .container
     max-width: 740px
