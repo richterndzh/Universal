@@ -684,7 +684,7 @@
   .newsletter
     &-form
       &__button
-        margin-top: 40px
+        margin-top: 0
   .announce
     height: 100%
     &-wrapper
@@ -831,6 +831,10 @@
         &-form
           &__textarea
             width: 100%
+  .newsletter-form #email-error
+    position: absolute
+    top: 45px
+    margin-left: -50px
 @media (max-width: 503px)
   .newsletter
     &-form
@@ -839,9 +843,15 @@
         width: 100%
         margin-right: 0
       &__button
+        margin-top: 20px
         position: relative
-        left: 50%
+        left: 20%
         transform: translate(-50%, 0)
+  .newsletter-form #email-error
+    position: absolute
+    top: 45px
+    margin-left: 0px
+    font-size: 10px
 @media (max-width: 498px)
   .bottomPages
     &-laters
