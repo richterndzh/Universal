@@ -72,12 +72,13 @@
         font-size: 20px
         line-height: 25px
         color: $primary
+        margin-bottom: 23px
       &-image
         width: 263px
         height: 180px
         border-radius: 10px
         object-fit: cover
-        overflow:
+        overflow: hidden
       &-heading
         display: block
         margin-top: 10px
@@ -135,8 +136,10 @@
         left: -20px
         z-index: -1
     &__text
+      text-align: justify
       margin-top: 0px
       margin-bottom: 30px
+      margin-left: 4px
       line-height: 30px
       overflow: hidden
       display: -webkit-box
@@ -222,10 +225,12 @@
         color: $primary
       &-author
         display: flex
+        margin-right: 27px
+        align-items: center
         &__divider
           width: 1px
           min-height: 70px
-          margin-right: 30px
+          margin-right: 28px
           background-color: $divider
           border: none
           margin-top: 0
