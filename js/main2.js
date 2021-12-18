@@ -65,7 +65,6 @@ var menuButton = $('.menu-button')
       $('.modal__dialog').removeClass('modal__dialog--visible')
     }
   })
-
   // Валидация форм
   $('.form').each(function () {
     $(this).validate({
