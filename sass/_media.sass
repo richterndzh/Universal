@@ -627,6 +627,8 @@
         &-wide
           height: 100%
           grid-column: span 1
+          &__text
+            width: 100%
           &__block
             padding: 20px
             &-right
@@ -648,7 +650,7 @@
               min-width: 13px
         &-thin
           &__bottom
-            top: 50%
+            top: 40%
     &-aside
       grid-template-columns: 1fr
       &__tags
@@ -870,6 +872,11 @@
     &-aside
       &__link
         margin-top: 0
+    &-main
+      &__block
+        &-thin
+          &__bottom
+            top: 40%
 @media (max-width: 435px)
   .announce
     &-wrapper
@@ -924,7 +931,7 @@
               min-width: 13px
         &-thin
           &__bottom
-            top: 50%
+            top: 40%
     &-aside
       grid-template-columns: 1fr
       &__tags
