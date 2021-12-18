@@ -172,6 +172,7 @@
         margin-bottom: 10px
   .page
     &-bottom
+      padding-left: 0
       &__theme
         margin-bottom: 20px
         position: relative
@@ -215,6 +216,19 @@
       transition: all 0.3s ease-in-out
       &:hover
         background-color: $darkblue
+  .activities
+    &-card
+      &__heading
+        &-link
+          &:hover
+            color: $orange
+  .page
+    &-bottom
+      &__tags
+        &-item
+          &:hover
+            border: 1px solid $orange
+            color: $orange
 @media (max-width: 992px)
   .container
     max-width: 740px
