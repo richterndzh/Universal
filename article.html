@@ -973,19 +973,24 @@
                 class="commentaries-reply__block-user"
               />
               <form
-                action="send_comment.php"
+                action="send.php"
                 method="POST"
-                class="commentaries-reply__block-form"
+                class="commentaries-reply__block-form form"
               >
                 <div class="commentaries-reply__block-form__textarea">
                   <textarea
                     name="comment"
                     class="commentaries-reply__block-form__textarea-block"
-                    minlength="100"
+                    cols="100"
                     required
+                    minlength="100"
                   ></textarea>
                 </div>
-                <button class="commentaries-reply__block-form__button">
+                <button
+                  type="submit"
+                  name="comment-send"
+                  class="commentaries-reply__block-form__button"
+                >
                   Отправить
                   <img
                     src="img/Arrow.svg"

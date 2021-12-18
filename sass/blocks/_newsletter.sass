@@ -1,6 +1,7 @@
 .newsletter
   background-color: $secondary
   &-container
+    margin: 0
     padding-top: 60px
     padding-bottom: 70px
     max-width: 750px
@@ -20,23 +21,38 @@
     color: $primary
     text-decoration: none
   &-form
+    position: relative
+    display: flex
+    justify-content: center
+    overflow: visible
     &__input
-      width: 313px
-      height: 40px
-      padding: 10px 15px
       margin-right: 10px
-      border: 1px solid $divider
+      padding: 10px 5px 10px 13px
+      width: 313px
+      min-height: 40px
+      border: 1px solid #D9DADB
       border-radius: 5px
       &::placeholder
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
         color: #939699
     &__button
-      width: 136px
-      height: 40px
+      padding: 10px 25px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      background-color: $blue
       border-radius: 20px
       border: none
       cursor: pointer
-      background-color: $blue
-      color: $secondary
       transition: all 0.3s ease-in-out
       &:hover
         background-color: $darkblue
+.newsletter-form #email-error
+  position: absolute
+  top: 45px
+  margin-left: -110px

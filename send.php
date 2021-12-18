@@ -56,7 +56,7 @@ try {
     };
 
     // Настройки вашей почты
-    $mail->Host = 'smtp.outlook.com'; // SMTP сервера вашей почты
+    $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username = 'richterndzh@gmail.com'; // Логин на почте
     $mail->Password = 'B15at17man29'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
