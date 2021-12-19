@@ -31,6 +31,8 @@ $(document).ready(function() {
     .classList.toggle('navbar-menu--visible');
   });
 
+  
+
 
   var modalButton = $('[data-toggle=modal]')
   var closeModalButton = $('.modal__close')

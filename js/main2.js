@@ -106,5 +106,12 @@ var menuButton = $('.menu-button')
       $('.hero-bookmark').css({ fill: 'rgb(188, 191, 194)' })
     }
   })
+
+  var menuButtonLight = document.querySelector(".navbar-button--light")
+  menuButtonLight.addEventListener('click', function () {
+    document
+    .querySelector(".navbar-menu")
+    .classList.toggle('navbar-menu--visible');
+  });
 });
 
