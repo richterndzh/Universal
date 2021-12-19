@@ -27,7 +27,7 @@
               alt="Logo: Universal"
               class="logo__image"
           /></a>
-          <div class="navbar-menu">
+          <div class="navbar-menu navbar-menu--light">
             <a
               href="#article-2"
               class="navbar-menu__link navbar-menu__link-light"
@@ -56,7 +56,7 @@
             </button>
           </div>
           <!-- /.nav -->
-          <button class="navbar-button navbar-button--mobile--visible">
+          <button class="navbar-button--light navbar-button--mobile--visible">
             <span class="navbar-button__line"></span>
             <span class="navbar-button__line"></span>
             <span class="navbar-button__line"></span>
@@ -534,437 +534,413 @@
       </div>
     </section>
     <!-- /.activities -->
-    <section class="commentaries">
+    <section class="comments">
       <div class="container">
-        <div class="commentaries-wrapper">
-          <div class="commentaries-heading">
-            <h2 class="commentaries-heading__headline">
-              Комментарии
-              <span class="commentaries-heading__headline-counter">19</span>
-            </h2>
-            <a href="#" class="commentaries-heading__link">
+        <div class="comments-wrapper">
+          <div class="comments-header">
+            <div class="comments-header__name">
+              <h2 class="comments-header__title">Комментарии</h2>
+              <span class="comments-header__count">19</span>
+            </div>
+            <!-- /.comments-header__name -->
+            <a href="#add-comment" class="comments-header__link">
               <img
                 src="img/Pencil.svg"
-                alt="Icon: Добавить комментарий"
-                class="commentaries-heading__link-icon"
-              /><span class="commentaries-heading__link-text"
-                >Добавить комментарий</span
-              >
+                alt="Иконка ручка"
+                class="comments-header__image"
+                width="20"
+                height="20"
+              />
+              <span class="comments-header__text">Добавить комментарий</span>
             </a>
           </div>
-          <!-- /.commentaries-heading -->
-          <hr class="commentaries-divider" />
-          <div class="commentaries-sheet">
-            <div class="commentaries-sheet__block">
+          <!-- /.comments-header -->
+          <div class="comments-cards">
+            <div class="comments-card">
               <img
                 src="img/papers/comments/avatar-1.png"
-                alt=""
-                class="commentaries-sheet__block-avatar"
+                alt="Фото Михаила Степашина"
+                class="comments-card__avatar"
+                width="75"
+                height="75"
               />
-              <div class="commentaries-sheet__block-message">
-                <div class="commentaries-sheet__block-message__heading">
-                  <h3 class="commentaries-sheet__block-message__heading-name">
-                    Михаил Степашин
-                  </h3>
-                  <span class="commentaries-sheet__block-message__heading-date">
-                    17 июля, 18:38
-                  </span>
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Михаил Степашин</span>
+                  <span class="comments-card__date">17 июля, 18:38</span>
                 </div>
-                <!-- /.commentaries-sheet_block-message_heading -->
-                <div class="commentaries-sheet__block-message__text">
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
                   Хочу заметить, что автор этой статьи не написал, что не все
                   могут получить статус самозанятого. Этот режим еще не ввели во
                   всех регионах. Но если в вашем регионе есть, то поздравляю.
-                </div>
-                <div class="commentaries-sheet__block-message__actions">
+                </p>
+                <div class="comments-card__details">
                   <img
                     src="img/Comment.svg"
-                    alt="Icon: Ответить"
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
                   />
-                  <span
-                    class="commentaries-sheet__block-message__actions-counter"
-                  >
-                    Ответить
-                  </span>
+                  <span class="comments-card__details-text">Ответить</span>
                   <img
                     src="img/Thumb-like.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
                   />
                   <span
                     class="
-                      commentaries-sheet__block-message__actions-counter__green
+                      comments-card__details-count
+                      comments-card__details-count--positive
                     "
                   >
                     +10
                   </span>
                   <img
                     src="img/Thumb-dislike.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
                   />
                 </div>
-                <!-- /.commentaries-sheet_block-message_actions -->
+                <!-- /.comments-card__details -->
               </div>
-              <!-- /.commentaries-sheet_block-message -->
+              <!-- /.comments-card__content -->
             </div>
-            <!-- /.commentaries-sheet_block -->
-            <hr class="commentaries-divider" />
-            <div
-              class="commentaries-sheet__block commentaries-sheet__block-answer"
-            >
+            <!-- /.comments-card -->
+            <div class="comments-card comments-card--answer">
               <img
                 src="img/papers/comments/avatar-2.png"
-                alt=""
-                class="commentaries-sheet__block-avatar"
+                alt="Фото Миры Стаховой"
+                class="comments-card__avatar"
+                width="75"
+                height="75"
               />
-              <div class="commentaries-sheet__block-message">
-                <div class="commentaries-sheet__block-message__heading">
-                  <h3 class="commentaries-sheet__block-message__heading-name">
-                    Мира Стахова
-                  </h3>
-                  <span class="commentaries-sheet__block-message__heading-date">
-                    17 июля, 18:41
-                  </span>
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Мира Стахова</span>
+                  <span class="comments-card__date">17 июля, 18:41</span>
                 </div>
-                <!-- /.commentaries-sheet_block-message_heading -->
-                <div class="commentaries-sheet__block-message__text">
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
                   Да, спасибо за замечание. Добавлю список регионов, где этот
                   режим уже действует и буду периодически обновлять его. Потому
                   что обещали ввести этот режим везде.
-                </div>
-                <div class="commentaries-sheet__block-message__actions">
+                </p>
+                <div class="comments-card__details">
                   <img
                     src="img/Comment.svg"
-                    alt="Icon: Ответить"
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
                   />
-                  <span
-                    class="commentaries-sheet__block-message__actions-counter"
-                  >
-                    Ответить
-                  </span>
+                  <span class="comments-card__details-text">Ответить</span>
                   <img
                     src="img/Thumb-like.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
                   />
-                  <span
-                    class="
-                      commentaries-sheet__block-message__actions-counter__none
-                    "
-                  >
-                    0
-                  </span>
+                  <span class="comments-card__details-count">0</span>
                   <img
                     src="img/Thumb-dislike.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
                   />
                 </div>
-                <!-- /.commentaries-sheet_block-message_actions -->
+                <!-- /.comments-card__details -->
               </div>
-              <!-- /.commentaries-sheet_block-message -->
+              <!-- /.comments-card__content -->
             </div>
-            <!-- /.commentaries-sheet_block -->
-            <hr class="commentaries-divider" />
-            <div class="commentaries-sheet__block">
+            <!-- /.comments-card -->
+            <div class="comments-card">
               <img
                 src="img/papers/comments/avatar-3.png"
-                alt=""
-                class="commentaries-sheet__block-avatar"
+                alt="Анжелы Ивановой"
+                class="comments-card__avatar"
+                width="75"
+                height="75"
               />
-              <div class="commentaries-sheet__block-message">
-                <div class="commentaries-sheet__block-message__heading">
-                  <h3 class="commentaries-sheet__block-message__heading-name">
-                    Анжела Иванова
-                  </h3>
-                  <span class="commentaries-sheet__block-message__heading-date">
-                    17 июля, 18:53
-                  </span>
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Анжела Иванова</span>
+                  <span class="comments-card__date">17 июля, 18:53</span>
                 </div>
-                <!-- /.commentaries-sheet_block-message_heading -->
-                <div class="commentaries-sheet__block-message__text">
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info comments-card__info--mb">
                   Если честно, кажется, что этот налоговый режим ввели, чтобы
                   собрать больше денег с народа. Я, конечно, понимаю, что
                   бюджеты надо пополнять, но не лучше ли обложить налогом
                   богатых?
-                </div>
-                <div class="commentaries-sheet__block-message__actions-mr">
+                </p>
+                <div class="comments-card__details">
                   <img
                     src="img/Comment.svg"
-                    alt="Icon: Ответить"
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
                   />
-                  <span
-                    class="commentaries-sheet__block-message__actions-counter"
-                  >
-                    Ответить
-                  </span>
+                  <span class="comments-card__details-text">Ответить</span>
                   <img
                     src="img/Thumb-like.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
                   />
                   <span
                     class="
-                      commentaries-sheet__block-message__actions-counter__red
+                      comments-card__details-count
+                      comments-card__details-count--negative
                     "
                   >
                     -3
                   </span>
                   <img
                     src="img/Thumb-dislike.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
                   />
                 </div>
-                <!-- /.commentaries-sheet_block-message_actions -->
+                <!-- /.comments-card__details -->
               </div>
-              <!-- /.commentaries-sheet_block-message -->
+              <!-- /.comments-card__content -->
             </div>
-            <!-- /.commentaries-sheet_block -->
-            <hr class="commentaries-divider" />
-            <div class="commentaries-sheet__block">
+            <!-- /.comments-card -->
+            <div class="comments-card">
               <img
                 src="img/papers/comments/avatar-4.png"
-                alt=""
-                class="commentaries-sheet__block-avatar"
+                alt="Фото Криса Якова"
+                class="comments-card__avatar"
+                width="75"
+                height="75"
               />
-              <div class="commentaries-sheet__block-message">
-                <div class="commentaries-sheet__block-message__heading">
-                  <h3 class="commentaries-sheet__block-message__heading-name">
-                    Крис Яков
-                  </h3>
-                  <span class="commentaries-sheet__block-message__heading-date">
-                    17 июля, 19:12
-                  </span>
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Крис Яков</span>
+                  <span class="comments-card__date">17 июля, 19:12</span>
                 </div>
-                <!-- /.commentaries-sheet_block-message_heading -->
-                <div class="commentaries-sheet__block-message__text">
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
                   Такой режим уже давно работает в продвинутых странах, почему
                   его ввели только сейчас, непонятно. Хотелось бы, чтобы это все
                   заработало в моем регионе, буду в числе первых!
-                </div>
-                <div class="commentaries-sheet__block-message__actions">
+                </p>
+                <div class="comments-card__details">
                   <img
                     src="img/Comment.svg"
-                    alt="Icon: Ответить"
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
                   />
-                  <span
-                    class="commentaries-sheet__block-message__actions-counter"
-                  >
-                    Ответить
-                  </span>
+                  <span class="comments-card__details-text">Ответить</span>
                   <img
                     src="img/Thumb-like.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
+                  />
+                  <span class="comments-card__details-count">0</span>
+                  <img
+                    src="img/Thumb-dislike.svg"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <!-- /.comments-card__details -->
+              </div>
+              <!-- /.comments-card__content -->
+            </div>
+            <!-- /.comments-card -->
+            <div class="comments-card comments-card--hidden">
+              <img
+                src="img/papers/comments/avatar-6.png"
+                alt=""
+                class="comments-card__avatar"
+                width="75"
+                height="75"
+              />
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Виктор Шульц</span>
+                  <span class="comments-card__date">17 февраля, 09:10</span>
+                </div>
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
+                  Я зарегистрировался в статусе «самозанятого» еще в начале
+                  этого года. Никаких минусов не ощущаю, правда, уточню,
+                  конкретно для себя. Рассматривать этот вариант нужно
+                  индивидуально, исходя из направления деятельности.
+                </p>
+                <div class="comments-card__details">
+                  <img
+                    src="img/Comment.svg"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
+                  />
+                  <span class="comments-card__details-text">Ответить</span>
+                  <img
+                    src="img/Thumb-like.svg"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
                   />
                   <span
                     class="
-                      commentaries-sheet__block-message__actions-counter__none
+                      comments-card__details-count
+                      comments-card__details-count--positive
                     "
                   >
-                    0
+                    +2
                   </span>
                   <img
                     src="img/Thumb-dislike.svg"
-                    alt=""
-                    class="commentaries-sheet__block-message__actions-icon"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
                   />
                 </div>
-                <!-- /.commentaries-sheet_block-message_actions -->
+                <!-- /.comments-card__details -->
               </div>
-              <!-- /.commentaries-sheet_block-message -->
+              <!-- /.comments-card__content -->
             </div>
-            <!-- /.commentaries-sheet_block -->
-            <div class="commentaries-sheet__block-hidden">
-              <hr class="commentaries-divider" />
-              <div class="commentaries-sheet__block">
-                <img
-                  src="img/papers/comments/avatar-6.png"
-                  alt=""
-                  class="commentaries-sheet__block-avatar"
-                />
-                <div class="commentaries-sheet__block-message">
-                  <div class="commentaries-sheet__block-message__heading">
-                    <h3 class="commentaries-sheet__block-message__heading-name">
-                      Виктор Шульц
-                    </h3>
-                    <span
-                      class="commentaries-sheet__block-message__heading-date"
-                    >
-                      17 февраля, 09:10
-                    </span>
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_heading -->
-                  <div class="commentaries-sheet__block-message__text">
-                    Хочу заметить, что автор этой статьи не написал, что не все
-                    могут получить статус самозанятого. Этот режим еще не ввели
-                    во всех регионах. Но если в вашем регионе есть, то
-                    поздравляю.
-                  </div>
-                  <div class="commentaries-sheet__block-message__actions">
-                    <img
-                      src="img/Comment.svg"
-                      alt="Icon: Ответить"
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="commentaries-sheet__block-message__actions-counter"
-                    >
-                      Ответить
-                    </span>
-                    <img
-                      src="img/Thumb-like.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="
-                        commentaries-sheet__block-message__actions-counter__green
-                      "
-                    >
-                      +2
-                    </span>
-                    <img
-                      src="img/Thumb-dislike.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_actions -->
+            <!-- /.comments-card -->
+            <div class="comments-card comments-card--hidden">
+              <img
+                src="img/papers/comments/avatar-7.png"
+                alt=""
+                class="comments-card__avatar"
+                width="75"
+                height="75"
+              />
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Мария Владимировна</span>
+                  <span class="comments-card__date">5 августа, 10:30</span>
                 </div>
-                <!-- /.commentaries-sheet_block-message -->
-              </div>
-              <!-- /.commentaries-sheet_block -->
-              <hr class="commentaries-divider" />
-              <div class="commentaries-sheet__block">
-                <img
-                  src="img/papers/comments/avatar-7.png"
-                  alt=""
-                  class="commentaries-sheet__block-avatar"
-                />
-                <div class="commentaries-sheet__block-message">
-                  <div class="commentaries-sheet__block-message__heading">
-                    <h3 class="commentaries-sheet__block-message__heading-name">
-                      Мария Владимировна
-                    </h3>
-                    <span
-                      class="commentaries-sheet__block-message__heading-date"
-                    >
-                      5 августа, 10:30
-                    </span>
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_heading -->
-                  <div class="commentaries-sheet__block-message__text">
-                    Хочу заметить, что автор этой статьи не написал, что не все
-                    могут получить статус самозанятого. Этот режим еще не ввели
-                    во всех регионах. Но если в вашем регионе есть, то
-                    поздравляю.
-                  </div>
-                  <div class="commentaries-sheet__block-message__actions">
-                    <img
-                      src="img/Comment.svg"
-                      alt="Icon: Ответить"
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="commentaries-sheet__block-message__actions-counter"
-                    >
-                      Ответить
-                    </span>
-                    <img
-                      src="img/Thumb-like.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="
-                        commentaries-sheet__block-message__actions-counter__red
-                      "
-                    >
-                      -9
-                    </span>
-                    <img
-                      src="img/Thumb-dislike.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_actions -->
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
+                  Хочу заметить, что автор этой статьи не написал, что не все
+                  могут получить статус самозанятого. Этот режим еще не ввели во
+                  всех регионах. Но если в вашем регионе есть, то поздравляю.
+                </p>
+                <div class="comments-card__details">
+                  <img
+                    src="img/Comment.svg"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
+                  />
+                  <span class="comments-card__details-text">Ответить</span>
+                  <img
+                    src="img/Thumb-like.svg"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
+                  />
+                  <span class="comments-card__details-count">-9</span>
+                  <img
+                    src="img/Thumb-dislike.svg"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
+                  />
                 </div>
-                <!-- /.commentaries-sheet_block-message -->
+                <!-- /.comments-card__details -->
               </div>
-              <!-- /.commentaries-sheet_block -->
-              <hr class="commentaries-divider" />
-              <div class="commentaries-sheet__block">
-                <img
-                  src="img/papers/comments/avatar-8.png"
-                  alt=""
-                  class="commentaries-sheet__block-avatar"
-                />
-                <div class="commentaries-sheet__block-message">
-                  <div class="commentaries-sheet__block-message__heading">
-                    <h3 class="commentaries-sheet__block-message__heading-name">
-                      Петр Зеленский
-                    </h3>
-                    <span
-                      class="commentaries-sheet__block-message__heading-date"
-                    >
-                      19 сентября, 20:22
-                    </span>
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_heading -->
-                  <div class="commentaries-sheet__block-message__text">
-                    Хочу заметить, что автор этой статьи не написал, что не все
-                    могут получить статус самозанятого. Этот режим еще не ввели
-                    во всех регионах. Но если в вашем регионе есть, то
-                    поздравляю.
-                  </div>
-                  <div class="commentaries-sheet__block-message__actions">
-                    <img
-                      src="img/Comment.svg"
-                      alt="Icon: Ответить"
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="commentaries-sheet__block-message__actions-counter"
-                    >
-                      Ответить
-                    </span>
-                    <img
-                      src="img/Thumb-like.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                    <span
-                      class="
-                        commentaries-sheet__block-message__actions-counter__green
-                      "
-                    >
-                    </span>
-                    <img
-                      src="img/Thumb-dislike.svg"
-                      alt=""
-                      class="commentaries-sheet__block-message__actions-icon"
-                    />
-                  </div>
-                  <!-- /.commentaries-sheet_block-message_actions -->
-                </div>
-                <!-- /.commentaries-sheet_block-message -->
-              </div>
-              <!-- /.commentaries-sheet_block -->
+              <!-- /.comments-card__content -->
             </div>
+            <!-- /.comments-card -->
+            <div class="comments-card comments-card--hidden">
+              <img
+                src="img/papers/comments/avatar-8.png"
+                alt=""
+                class="comments-card__avatar"
+                width="75"
+                height="75"
+              />
+              <div class="comments-card__content">
+                <div class="comments-card__author">
+                  <span class="comments-card__name">Петр Зеленский</span>
+                  <span class="comments-card__date">19 сентября, 20:22</span>
+                </div>
+                <!-- /.comments-card__author -->
+                <p class="comments-card__info">
+                  Хочу заметить, что автор этой статьи не написал, что не все
+                  могут получить статус самозанятого. Этот режим еще не ввели во
+                  всех регионах. Но если в вашем регионе есть, то поздравляю.
+                </p>
+                <div class="comments-card__details">
+                  <img
+                    src="img/Comment.svg"
+                    alt="Иконка комментария"
+                    class="comments-card__details-comment"
+                    width="15"
+                    height="15"
+                  />
+                  <span class="comments-card__details-text">Ответить</span>
+                  <img
+                    src="img/Thumb-like.svg"
+                    alt="Иконка палец вверх"
+                    class="comments-card__details-thumbup"
+                    width="15"
+                    height="15"
+                  />
+                  <span
+                    class="
+                      comments-card__details-count
+                      comments-card__details-count--positive
+                    "
+                  >
+                  </span>
+                  <img
+                    src="img/Thumb-dislike.svg"
+                    alt="Иконка палец вниз"
+                    class="comments-card__details-thumbdown"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <!-- /.comments-card__details -->
+              </div>
+              <!-- /.comments-card__content -->
+            </div>
+            <!-- /.comments-card -->
+            <button type="button" class="comments-button">
+              <img
+                src="img/Loading.svg"
+                alt="Иконка закрузки в виде двух полукруглых стрелок"
+                class="comments-button__image"
+                width="15"
+                height="15"
+              />
+              <span class="comments-button__name">загрузить еще</span>
+            </button>
           </div>
-          <button class="commentaries-load">
-            <img src="img/Loading.svg" alt="" class="commentaries-load__icon" />
-            загрузить еще
-          </button>
-          <div class="commentaries-reply">
+          <!-- /.comments-cards -->
+          <div id="add-comment" class="commentaries-reply">
             <h3 class="commentaries-reply__heading">
               Что вы думаете на этот счет?
             </h3>
@@ -1006,12 +982,10 @@
           </div>
           <!-- /.commentaries-reply -->
         </div>
-        <!-- /.commentaries-sheet -->
-        <!-- /.commentaries-wrapper -->
+        <!-- /.comments-wrapper -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.commentaries -->
     <section class="newsletter">
       <div class="container">
         <div class="newsletter-container">
