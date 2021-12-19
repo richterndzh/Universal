@@ -2,7 +2,7 @@
   &-wrapper
     display: grid
     grid-template-columns: 1fr 263px
-    grid-gap: 30px
+    grid-gap: 32px
     background-color: $tertiary
     padding-top: 30px
     padding-bottom: 60px
@@ -68,11 +68,6 @@
         height: 370px
         background-color: $secondary
         padding-top: 15px
-        &__text
-          overflow: hidden
-          display: -webkit-box
-          -webkit-line-clamp: 10
-          -webkit-box-orient: horizontal
         &__block
           display: flex
           align-items: center
@@ -114,11 +109,10 @@
           font-weight: normal
           font-size: 14px
           line-height: 20px
-          width: 200px
           overflow: hidden
           display: -webkit-box
-          -webkit-line-clamp: 5
-          -webkit-box-orient: vertical
+          -webkit-line-clamp: 10
+          -webkit-box-orient: horizontal
         &__divider
           width: 100%
           height: 1px
@@ -319,10 +313,6 @@
         line-height: 25px
         color: $secondary
         z-index: 10
-        overflow: hidden
-        display: -webkit-box
-        -webkit-line-clamp: 2
-        -webkit-box-orient: vertical
       &-info
         font-style: normal
         font-weight: normal
@@ -333,6 +323,7 @@
       &-block
         display: flex
         justify-content: center
+        margin-top: -1px
         &__icon
           width: 17px
           height: 17px
@@ -404,6 +395,8 @@
         margin-top: 25px
         display: flex
         justify-content: space-evenly
+        margin-right: -5px
+        margin-left: -5px
       &-link
         width: 50px
         height: 50px
