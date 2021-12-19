@@ -10,7 +10,7 @@
     padding-left: 98px
     padding-bottom: 30px
     &__heading
-      margin-top: 40px
+      margin-top: 42px
       margin-bottom: 30px
       font-family: Roboto Slab
       font-style: normal
@@ -23,7 +23,7 @@
       -webkit-line-clamp: 1
       -webkit-box-orient: vertical
     &__text
-      text-align: justify
+      text-align: left
       line-height: 30px
       margin-top: 10px
       margin-bottom: 30px
@@ -33,7 +33,7 @@
       -webkit-line-clamp: 5
       -webkit-box-orient: vertical
       &-second
-        margin-top: 2px
+        margin-top: -16px
         line-height: 30px
         overflow: hidden
         display: -webkit-box
@@ -43,8 +43,6 @@
         margin-top: 20px
         margin-left: -5px
         line-height: 30px
-        padding-bottom: 0
-        margin-bottom: 0px
         &::first-letter
           letter-spacing: 1px
           font-weight: 900
@@ -55,8 +53,9 @@
           float: left
           margin-right: 9px
           margin-top: -8px
+          margin-bottom: 0
   &-bottom
-    max-width: 710px
+    max-width: 720px
     padding-top: 45px
     padding-left: 92px
     padding-bottom: 90px
@@ -66,7 +65,14 @@
       top: 160px
       left: 780px
       width: 263px
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 20px
+
       &-title
+        margin-top: 19px
+        margin-left: -2px
         font-family: Roboto Slab
         font-style: normal
         font-weight: bold
@@ -82,7 +88,7 @@
         overflow: hidden
       &-heading
         display: block
-        margin-top: 10px
+        margin-top: 8px
         margin-bottom: 5px
         width: 180px
         font-family: Roboto Slab
@@ -115,11 +121,12 @@
         &__icon
           margin-right: 5px
         &__counter
-          margin-right: 11px
+          margin-right: 10px
     &__quote
       position: relative
       margin-top: 80px
       margin-bottom: 45px
+      margin-left: 5px
       font-family: Roboto Slab
       font-style: normal
       font-weight: bold
@@ -144,12 +151,13 @@
       line-height: 30px
       overflow: hidden
       display: -webkit-box
-      -webkit-line-clamp: 7
+      -webkit-line-clamp: 14
       -webkit-box-orient: vertical
     &__tags
       display: flex
       flex-wrap: wrap
-      margin-top: 40px
+      margin-top: 44px
+      margin-left: 4px
       margin-bottom: 60px
       &-item
         margin-right: 10px
@@ -169,8 +177,8 @@
       border: none
     &__share
       margin-top: 30px
-      margin-bottom: 25px
-      margin-left: 8px
+      margin-bottom: 23px
+      margin-left: 4px
       font-family: Roboto Slab
       font-style: normal
       font-weight: bold
@@ -180,14 +188,14 @@
     &__links
       display: flex
       align-items: center
-      margin-left: 10px
+      margin-left: 6px
       &-link
         display: flex
         align-items: center
         height: 40px
         width: 132px
-        margin-right: 14px
-        padding-left: 24px
+        margin-right: 12px
+        padding: 0 10px 0 22px
         background-color: $blue
         font-style: normal
         font-weight: 900
@@ -196,13 +204,19 @@
         color: $secondary
         text-decoration: none
         border-radius: 20px
+        &--face
+          padding-left: 26px
         &:hover
           opacity: 0.8
         &__icon
-          height: 15px
+          height: 18px
           margin-right: 9px
+          &--face
+            margin-right: 15px
         &__action
           margin-right: 8px
+          &--face
+            margin-right: 10px
         &__counter
           color: #BBC6FF
   &-wrapper
@@ -214,7 +228,8 @@
       display: flex
       align-items: center
       justify-content: space-between
-      padding: 0px 35px
+      padding: 0px 32px
+      height: 68px
       &-text
         font-style: normal
         font-weight: normal
@@ -243,6 +258,8 @@
           display: flex
           flex-direction: column
           &-name
+            margin-top: -1px
+            margin-bottom: 2px
             font-style: normal
             font-weight: normal
             font-size: 14px
@@ -267,11 +284,13 @@
       width: 60px
       height: 60px
       left: 35px
+      top: 270px
       &:hover
         opacity: 0.8
     &-next
       width: 60px
       height: 60px
       right: 35px
+      top: 270px
       &:hover
         opacity: 0.8
