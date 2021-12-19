@@ -383,7 +383,6 @@
   .container
     max-width: 676px
     width: 92%
-    z-index: 99
   body
     padding-top: 70px
   .navbar
@@ -417,16 +416,41 @@
         font-weight: 900
         font-size: 24px
         line-height: 30px
+        &--light
+          font-weight: 900
+          font-size: 24px
+          line-height: 30px
+          color: $secondary
     &-button
-      top: 300px
-      left: 10px
-      font-size: 10px
-      line-height: 12px
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      width: 16px
+      height: 11px
+      padding: 0
+      border: none
+      cursor: pointer
+      background-color: $primary
       &__line
         width: 16px
         height: 1px
         background-color: $secondary
-
+        &--light
+          width: 16px
+          height: 1px
+          background-color: $primary
+      &--light
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: space-between
+        width: 16px
+        height: 11px
+        padding: 0
+        border: none
+        cursor: pointer
+        background-color: $secondary
   .tabs
     &-content
       &__block
