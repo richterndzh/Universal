@@ -98,5 +98,13 @@ var menuButton = $('.menu-button')
         .toggle('slow')
         .toggleClass('comments-card--hidden--visible')
     })
+
+  $('.hero-bookmark').on('click', function () {
+    if ($('.hero-bookmark').css('fill') == 'rgb(188, 191, 194)') {
+      $('.hero-bookmark').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.hero-bookmark').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
 });
 
