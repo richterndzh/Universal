@@ -1,141 +1,151 @@
-.commentaries
-  padding-top: 90px
-  padding-bottom: 30px
+.comments
+  padding-top: 30px
   background-color: $secondary
   &-wrapper
-    padding-left: 96px
-    max-width: 842px
-  &-heading
+    padding-top: 60px
+    padding-bottom: 30px
+    padding-left: 97px
+    padding-right: 293px
+  &-sheet
+    &__block
+      display: flex
+      margin-top: 20px
+      margin-bottom: 20px
+  &-header
     display: flex
+    align-items: center
     justify-content: space-between
-    margin-bottom: 25px
-    &__headline
+    margin-bottom: 26px
+    &__name
+      display: flex
+      align-items: baseline
+    &__title
       margin: 0
-      font-family: Roboto Slab
+      margin-right: 10px
+      font-family: "Roboto Slab", serif
       font-style: normal
       font-weight: bold
       font-size: 40px
       line-height: 50px
       color: $primary
-      &-counter
-        font-family: Lato-medium
-        font-style: normal
-        font-weight: normal
-        font-size: 40px
-        line-height: 50px
-        color: $infotext
-        text-transform: uppercase
+    &__count
+      font-style: normal
+      font-weight: normal
+      font-size: 40px
+      line-height: 50px
+      text-transform: uppercase
+      color: $infotext
     &__link
       display: flex
       justify-content: space-between
       align-items: center
-      padding: 10px 20px
+      padding: 10px 20px 10px 20px
+      text-decoration: none
       border: 1px solid $divider
       border-radius: 20px
-      height: 40px
-      text-decoration: none
-      &-icon
-        width: 18px
-        height: 18px
-      &-text
-        margin-left: 11px
-        font-style: normal
-        font-weight: 900
-        font-size: 14px
-        line-height: 20px
-        color: $primary
+    &__text
+      margin-left: 10px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $primary
       &:hover
         border: 1px solid $orange
-  &-divider
-    width: 100%
-    height: 1px
-    background-color: $divider
-    border: none
-  &-sheet
-    &__block
+  &-card
+    display: flex
+    padding-top: 20px
+    padding-bottom: 29px
+    border-top: 1px solid $divider
+    &--hidden
+      display: none
+      &--visible
+        display: flex !important
+
+    &--answer
+      padding-left: 90px
+    &__avatar
+      margin-right: 14px
+      border-radius: 50%
+      object-fit: cover
+    &__author
       display: flex
-      margin-top: 20px
-      margin-bottom: 29px
-      &-answer
-        padding-left: 90px
-      &-hidden
-        display: none
-      &-visible
-        display: block
-      &-avatar
-        width: 75px
-        height: 75px
-        object-fit: cover
-        border-radius: 50px
-      &-message
-        margin-left: 15px
+      align-items: center
+    &__name
+      margin-right: 10px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $primary
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__info
+      margin: 0
+      margin-top: 11px
+      margin-bottom: 14px
+      max-width: 570px
+      width: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: #4B5157
+      &--mb
+        margin-bottom: 45px
+    &__details
+      display: flex
+      align-items: center
+      &-comment
+        margin-right: 5px
+      &-text
+        margin-right: 15px
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 15px
-        color: $infotext
-        &__heading
-          display: flex
-          align-items: center
-          margin-bottom: 10px
-          &-name
-            margin: 0
-            font-family: Roboto Slab
-            font-style: normal
-            font-weight: bold
-            font-size: 16px
-            line-height: 25px
-            color: $primary
-          &-date
-            margin-left: 10px
-        &__text
-          margin-bottom: 15px
-          max-width: 570px
-          font-style: normal
-          font-weight: normal
-          font-size: 18px
-          line-height: 30px
-          color: $light-text-color
-        &__actions
-          display: flex
-          align-items: center
-          cursor: pointer
-          &-mr
-            margin-top: 46px
-          &-icon
-            width: 13px
-            height: 13px
-            margin-right: 5px
-            margin-left: 5px
-          &-counter
-            color: $primary
-            margin-right: 6px
-            &__none
-              color: $infotext
-            &__green
-              color: $green
-            &__red
-              color: $red
-  &-load
+        color: $primary
+      &-thumbup
+        margin-right: 12px
+      &-count
+        display: inline-block
+        margin-right: 10px
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+        &--positive
+          font-weight: 700
+          color: #3DC47E
+        &--negative
+          font-weight: 700
+          color: #FF4F52
+  &-button
     display: flex
-    justify-content: center
     align-items: center
-    margin-bottom: 60px
-    width: 750px
-    padding: 10px 20px
-    border: 1px solid $divider
+    justify-content: center
+    width: 100%
+    padding-top: 14px
+    padding-bottom: 15px
+    border: 1px solid #D9DADB
     border-radius: 25px
-    height: 50px
-    text-decoration: none
     background-color: $secondary
     cursor: pointer
-    &__hidden
-      display: none
-    &__icon
-      width: 13px
-      margin-right: 7px
-    &:hover
-      border: 1px solid $orange
+    margin-bottom: 30px
+    &__image
+      margin-left: 25px
+    &__name
+      margin-left: 7px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $primary
+.commentaries
   &-reply
     padding: 30px 40px 35px 30px
     max-width: 842px
@@ -143,6 +153,7 @@
     &__heading
       margin-top: 0
       margin-left: 100px
+
       margin-bottom: 15px
       font-family: Roboto Slab
       font-style: normal
@@ -161,7 +172,7 @@
       &-form
         width: 100%
         &__textarea
-          margin-bottom: 20px
+          margin-bottom: 15px
           width: 590px
           height: 130px
           padding: 10px 10px

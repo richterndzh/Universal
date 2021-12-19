@@ -191,6 +191,9 @@
   .activities
     &-card
       max-width: 220px
+  .comments
+    &-wrapper
+      padding: 0px 50px
   .commentaries
     &-load
       width: 100%
@@ -361,6 +364,9 @@
     &-card
       max-width: 170px
       min-height: 50px
+  .comments
+    &-wrapper
+      padding: 0
   .commentaries
     &-wrapper
       padding-left: 0
@@ -553,8 +559,10 @@
     &-wrapper
       flex-wrap: wrap
     &-card
-      min-width: 49%
+      min-width: 47%
+      margin-bottom: 30px
       &__image
+        width: 100%
         height: 200px
   .commentaries
     &-wrapper
@@ -566,6 +574,14 @@
         &-form
           &__textarea
             width: 100%
+  .comments
+    &-wrapper
+      padding: 0
+    &-header
+      &__title
+        font-size: 26px
+      &__count
+        font-size: 28px
 @media (max-width: 670px)
   .commentaries
     &-heading
@@ -825,10 +841,7 @@
       &__image
         height: 200px
   .commentaries
-    &-wrapper
-      padding-left: 0
     &-heading
-      flex-wrap: wrap
       &__headline
         font-size: 24px
         line-height: 30px
@@ -850,10 +863,30 @@
         &-form
           &__textarea
             width: 100%
+          &__button
+            margin-top: 20px
+  .comments
+    &-header
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      &__link
+        margin-top: 10px
+    &-card
+      &__info
+        font-size: 14px
+        &--mb
+          margin-bottom: 10px
+      &--answer
+        padding-left: 0
+      &__author
+        display: flex
+        flex-direction: column
   .newsletter-form #email-error
     position: absolute
     top: 45px
     margin-left: -50px
+
 @media (max-width: 503px)
   .newsletter
     &-form

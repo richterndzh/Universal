@@ -92,25 +92,11 @@ var menuButton = $('.menu-button')
       },
     })
   })
-var commentButton = document.querySelector(".commentaries-load")
-  commentButton.addEventListener('click', function () {
-    document
-    .querySelector(".commentaries-sheet__block-hidden")
-    .classList.toggle('commentaries-sheet__block-visible');    
-  });
-
-  var loadButton = document.querySelector(".commentaries-load")
-  loadButton.addEventListener('click', function () {
-    document
-    .querySelector(".commentaries-load")
-    .classList.toggle('commentaries-load__hidden');    
-  });
-
-  var menuButtonLight = document.querySelector(".navbar-button__light")
-  menuButtonLight.addEventListener('click', function () {
-    document
-    .querySelector(".navbar-menu")
-    .classList.toggle('navbar-menu__visible');
-  });
+  var commentsButton = $('.comments-button')
+    commentsButton.on('click', function () {
+      $('.comments-card--hidden')
+        .toggle('slow')
+        .toggleClass('comments-card--hidden--visible')
+    })
 });
 
