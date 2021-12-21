@@ -350,8 +350,15 @@
             &:hover
               color: $primary
     &-bottom
+      display: flex
+      flex-direction: column
       &__info
-        max-width: 70%
+        max-width: 100%
+        text-align: center
+        margin-right: 0
+        margin-bottom: 20px
+      &__copyright
+        text-align: center
   .modal
     &__dialog
       width: 87%
