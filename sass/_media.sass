@@ -219,6 +219,15 @@
       transition: all 0.3s ease-in-out
       &:hover
         background-color: $darkblue
+  .articles
+    &-aside
+      &__download
+        cursor: pointer
+        transition: all 0.3s ease-in-out
+        &:hover
+          opacity: 0.6
+          transform: scale(1.03)
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
   .extra
     &-block
       &__text
@@ -233,6 +242,18 @@
             color: $orange
   .page
     &-bottom
+      &__links
+        &-link
+          transition: all 0.3s ease-in-out
+          &:hover
+            opacity: 0.6
+            transform: scale(1.03)
+            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
+      &__theme
+        &-heading
+          transition: all 0.3s ease-in-out
+          &:hover
+            color: $orange
       &__tags
         &-item
           &:hover
@@ -303,6 +324,7 @@
             transition: all 0.3s ease-in-out
             &:hover
               background: $darkblue
+
 @media (max-width: 992px)
   .container
     max-width: 740px
