@@ -97,6 +97,12 @@ var menuButton = $('.menu-button')
       $('.comments-card--hidden')
         .toggle('slow')
         .toggleClass('comments-card--hidden--visible')
+  })
+  var closeButton = $('.comments-button')
+    closeButton.on('click', function () {
+      $('.comments-button')
+        .toggle('slow')
+        .toggleClass('comments-button--none')
     })
 
   $('.hero-bookmark').on('click', function () {
@@ -114,8 +120,5 @@ var menuButton = $('.menu-button')
     .classList.toggle('navbar-menu--visible');
   });
 
-  $("#my_btn").click( function(){
-    $("#my_btn").html("скрыть");
-  });
 });
 
