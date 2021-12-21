@@ -113,5 +113,9 @@ var menuButton = $('.menu-button')
     .querySelector(".navbar-menu")
     .classList.toggle('navbar-menu--visible');
   });
+
+  $("#my_btn").click( function(){
+    $("#my_btn").html("скрыть");
+  });
 });
 
