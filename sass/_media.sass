@@ -459,21 +459,25 @@
         width: 16px
         height: 1px
         background-color: $secondary
+    &-buttons
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      width: 16px
+      height: 11px
+      padding: 0
+      border: none
+      cursor: pointer
+      background-color: $secondary
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $primary
         &--light
           width: 16px
           height: 1px
           background-color: $primary
-      &--light
-        display: flex
-        align-items: center
-        flex-direction: column
-        justify-content: space-between
-        width: 16px
-        height: 11px
-        padding: 0
-        border: none
-        cursor: pointer
-        background-color: $primary
   .tabs
     &-content
       &__block

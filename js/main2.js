@@ -28,7 +28,7 @@ var menuButton = $('.menu-button')
   menuButton.on('click', function () {
     $('.navbar-menu').toggleClass('navbar-menu--visible')
   })
-  var menuButtonLight = $('.menu-button--light')
+  var menuButtonLight = $('.menu-buttons--light')
   menuButtonLight.on('click', function () {
     $('.navbar-menu--light').toggleClass('navbar-menu--visible--light')
   })
@@ -107,7 +107,7 @@ var menuButton = $('.menu-button')
     }
   })
 
-  var menuButtonLight = document.querySelector(".navbar-button--light")
+  var menuButtonLight = document.querySelector(".navbar-buttons--light")
   menuButtonLight.addEventListener('click', function () {
     document
     .querySelector(".navbar-menu")
