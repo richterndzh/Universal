@@ -57,14 +57,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username = 'richterndzh@gmail.com'; // Логин на почте
-    $mail->Password = 'B15at17man29'; // Пароль на почте
+    $mail->Username = 'login@gmail.com'; // Логин на почте
+    $mail->Password = '123456'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('richterndzh@gmail.com', 'Nadezhda Richter'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('login@gmail.com', 'Nadezhda Richter'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('nazixer@gmail.com');
+    $mail->addAddress('login-2@gmail.com');
 
     // Отправка сообщения
     $mail->isHTML(true);
